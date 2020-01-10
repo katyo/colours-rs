@@ -1,0 +1,20 @@
+[package]
+name = "colours"
+version = "0.1.0"
+description = "Color types for different color models with conversions between it."
+authors = ["K. <kayo@illumium.org>"]
+edition = "2018"
+repository = "https://github.com/katyo/colours-rs"
+readme = "README.md"
+keywords = ["color", "alpha", "rgb", "hsv", "hsl"]
+categories = ["data-structures", "graphics"]
+license = "MIT"
+
+[badges.travis-ci]
+repository = "https://github.com/katyo/colours-rs"
+branch = "master"
+
+[badges.maintenance]
+status = "experimental"
+
+[dependencies]
