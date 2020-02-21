@@ -1,5 +1,6 @@
 use super::{IsColorChannel, IsColor, HasAlpha, HasntAlpha, Hsva, Hsl, Rgb};
 
+/// Generic HSV color
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct Hsv<T> {
     pub hue: T,

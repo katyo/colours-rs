@@ -1,3 +1,11 @@
+/*!
+# Generic color manipulation library
+
+This crate implements widely used color types of different color models with conversions between it.
+
+Each type can be parametrized by scalar type which will be used as channel or color component.
+ */
+
 mod color;
 mod rgb;
 mod rgba;

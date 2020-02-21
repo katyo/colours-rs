@@ -1,5 +1,6 @@
 use super::{IsColorChannel, IsColor, HasAlpha, HasntAlpha, Rgba, Hsl, Hsv};
 
+/// Generic RGB color
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct Rgb<T> {
     pub red: T,
