@@ -1,8 +1,16 @@
 language: rust
 rust:
-  - stable
-  - beta
-  - nightly
+- stable
+- beta
+- nightly
 script:
-  - cargo build --verbose --all
-  - cargo test --verbose --all
+- cargo build --verbose --all
+- cargo test --verbose --all
+jobs:
+  allow_failures:
+  - rust: nightly
+  include:
+  - stage: publish
+    script:
+    - (cd colours && cargo publish || true)
+    if: (type = push) && (tag =~ /^\d+\.\d+\.\d+/)
