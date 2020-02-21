@@ -11,7 +11,7 @@ categories = ["data-structures", "graphics"]
 license = "MIT"
 
 [badges.travis-ci]
-repository = "https://github.com/katyo/colours-rs"
+repository = "katyo/colours-rs"
 branch = "master"
 
 [badges.maintenance]
